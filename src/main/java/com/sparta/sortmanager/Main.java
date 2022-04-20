@@ -21,6 +21,11 @@ public class Main {
         int arrayLength = menu.scanArrayLength();
         System.out.println(arrayLength);
 
+        ArrayInteractions arraySorter = ArrayFactory.getSortMethod(chosenSort, arrayLength);
+        arraySorter.printRandomArray();
+
+        arraySorter.sortRandomArray();
+        arraySorter.printSortedArray();
 
         /*
         The program should then output:

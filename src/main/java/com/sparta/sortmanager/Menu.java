@@ -3,7 +3,6 @@ package com.sparta.sortmanager;
 import java.util.Scanner;
 
 public class Menu {
-
     Scanner scan = new Scanner(System.in);
 
     public void printMenu() {
@@ -14,7 +13,8 @@ public class Menu {
         /*
         A for loop to list out all the sort methods?
 
-        Meanwhile just a dummy text:
+        just a dummy text for now:
+        -> use Enum numbers
         */
         System.out.println("\t1. Bubble Sort");
         System.out.println("\t2. Merge Sort");
@@ -31,6 +31,7 @@ public class Menu {
 
             /*
             use list of sorts.length to avoid static number?
+            -> enum numbers.length?
              */
         } while ( !(chosenMenuPoint >= 1 && chosenMenuPoint <= 2) );
 
@@ -38,13 +39,13 @@ public class Menu {
     }
 
     public int scanArrayLength() {
-        int arrayLenght;
+        int arrayLength;
 
         do {
             System.out.println("Please enter the length of the randomly generated array.");
-            arrayLenght = scan.nextInt();
-        } while (arrayLenght <= 0);
+            arrayLength = scan.nextInt();
+        } while (arrayLength <= 0);
 
-        return arrayLenght;
+        return arrayLength;
     }
 }
