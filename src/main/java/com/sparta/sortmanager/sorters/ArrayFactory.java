@@ -1,4 +1,4 @@
-package com.sparta.sortmanager;
+package com.sparta.sortmanager.sorters;
 
 /*
 System.out.println("\t1. Bubble Sort");

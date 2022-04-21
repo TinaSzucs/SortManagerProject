@@ -1,4 +1,7 @@
-package com.sparta.sortmanager;
+package com.sparta.sortmanager.start;
+
+import com.sparta.sortmanager.display.DisplayManager;
+import com.sparta.sortmanager.controller.SortManager;
 
 public class Main {
     public static void main(String[] args) {
@@ -6,26 +9,17 @@ public class Main {
         /*
         The user is presented with a number of sort algorithms to choose from.
         */
-        Menu menu = new Menu();
-        menu.printMenu();
+        DisplayManager.printWelcome();
 
         /*
          Decision is given via the command line (using Scanner).
          */
-        int chosenSort = menu.scanMenuInput();
-        System.out.println(chosenSort);
+        SortManager.scanMenuInput();
 
         /*
         The program will then ask for the length of an array again via the command line.
          */
-        int arrayLength = menu.scanArrayLength();
-        System.out.println(arrayLength);
-
-        ArrayInteractions arraySorter = ArrayFactory.getSortMethod(chosenSort, arrayLength);
-        arraySorter.printRandomArray();
-
-        arraySorter.sortRandomArray();
-        arraySorter.printSortedArray();
+        SortManager.scanArrayLength();
 
         /*
         The program should then output:

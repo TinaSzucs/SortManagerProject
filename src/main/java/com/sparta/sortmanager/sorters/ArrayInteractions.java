@@ -1,4 +1,6 @@
-package com.sparta.sortmanager;
+package com.sparta.sortmanager.sorters;
+
+import com.sparta.sortmanager.sorters.SortRandomArray;
 
 import java.util.Random;
 

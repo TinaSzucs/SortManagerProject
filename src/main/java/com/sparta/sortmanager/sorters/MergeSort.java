@@ -1,9 +1,9 @@
-package com.sparta.sortmanager;
+package com.sparta.sortmanager.sorters;
 /*
     use System.arraycopy(arrayToSort, 0, leftArrayToSort, 0, midIndex);
  */
 
-public class MergeSort extends ArrayInteractions{
+public class MergeSort extends ArrayInteractions {
     public MergeSort(int arrayLength) {
         super(arrayLength);
     }

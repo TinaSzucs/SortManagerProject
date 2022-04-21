@@ -1,6 +1,6 @@
-package com.sparta.sortmanager;
+package com.sparta.sortmanager.sorters;
 
-public class BubbleSort extends ArrayInteractions{
+public class BubbleSort extends ArrayInteractions {
     public BubbleSort(int arrayLength) {
         super(arrayLength);
     }
