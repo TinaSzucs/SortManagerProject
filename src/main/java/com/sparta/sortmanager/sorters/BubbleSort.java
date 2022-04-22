@@ -5,9 +5,11 @@ public class BubbleSort extends ArrayInteractions {
         super(arrayLength);
     }
 
+    // Adapter
     @Override
     public void sortRandomArray() {
-        int[] arrayToSort = this.getGeneratedArray();
+        int[] arrayToSort = this.getSortedArray();
+
 
         int arrayLength = arrayToSort.length;
         int temporaryNumber;

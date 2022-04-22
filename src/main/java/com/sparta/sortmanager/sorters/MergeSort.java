@@ -63,11 +63,9 @@ public class MergeSort extends ArrayInteractions {
     // Adapter
     @Override
     public void sortRandomArray(){
-        int[] arrayToSort = this.getGeneratedArray();
+        int[] arrayToSort = this.getSortedArray();
 
-        System.out.println("Pretending to run Merged Sort.");
         mergeSort(arrayToSort);
-//        mergeSort(arrayToSort, arrayToSort.length);
 
         this.setSortedArray(arrayToSort);
     }
