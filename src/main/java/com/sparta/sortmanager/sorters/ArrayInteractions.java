@@ -3,9 +3,11 @@ package com.sparta.sortmanager.sorters;
 import java.util.Arrays;
 import java.util.Random;
 
+
 public class ArrayInteractions implements SortRandomArray {
     private int[] generatedArray;
     private int[] sortedArray;
+    private long timeTaken;
 
     public ArrayInteractions(int arrayLength) {
         // Already ensured input will be >= 1
@@ -33,7 +35,15 @@ public class ArrayInteractions implements SortRandomArray {
         this.sortedArray = sortedArray;
     }
 
+    public long getTimeTaken() {
+        return timeTaken;
+    }
+
+    public void setTimeTaken(long timeTaken) {
+        this.timeTaken = timeTaken;
+    }
+
     @Override
-    public void sortRandomArray(){}
+    public void sortRandomArray() {}
 
 }

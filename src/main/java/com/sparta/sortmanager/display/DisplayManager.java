@@ -43,9 +43,11 @@ public abstract class DisplayManager {
         printArray(array);
     }
 
-    public static void printSortedArray(int[] array) {
+    public static void printSortedArray(int[] array, long time) {
         System.out.println("The Sorted array:");
         printArray(array);
+
+        System.out.printf("The time taken: %d nanoseconds\n", time);
     }
 
 }

@@ -1,7 +1,4 @@
 package com.sparta.sortmanager.sorters;
-/*
-    use System.arraycopy(arrayToSort, 0, leftArrayToSort, 0, midIndex);
- */
 
 public class MergeSort extends ArrayInteractions {
     public MergeSort(int arrayLength) {
@@ -11,7 +8,6 @@ public class MergeSort extends ArrayInteractions {
     public static void mergeArrays(int[] arrayToMergeIn, int[] leftArray, int[] rightArray){
         // storing in variables the current indexes the program at
         int leftIndex=0, rightIndex=0, mergeIndex=0;
-        //#
 
         // we keep comparing the numbers until we reached the end of one/both sub arrays
         while (leftIndex < leftArray.length && rightIndex < rightArray.length) {
@@ -63,10 +59,15 @@ public class MergeSort extends ArrayInteractions {
     // Adapter
     @Override
     public void sortRandomArray(){
+        long start = System.nanoTime();
+
         int[] arrayToSort = this.getSortedArray();
 
         mergeSort(arrayToSort);
 
         this.setSortedArray(arrayToSort);
+
+        long finish = System.nanoTime();
+        this.setTimeTaken(finish-start);
     }
 }

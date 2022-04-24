@@ -18,15 +18,13 @@ public class Main {
 
         /*
         The program will then ask for the length of an array again via the command line.
+
+        The program should then output:
+        The unsorted randomly generated array
+        The sort algorithm to be used
+        The sorted array after the algorithm has been executed
+        The time taken
          */
         SortManager.scanArrayLength();
-
-        /*
-        The program should then output:
-            The unsorted randomly generated array
-            The sort algorithm to be used
-            The sorted array after the algorithm has been executed
-            The time taken
-         */
     }
 }

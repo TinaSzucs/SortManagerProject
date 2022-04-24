@@ -8,6 +8,7 @@ public class BubbleSort extends ArrayInteractions {
     // Adapter
     @Override
     public void sortRandomArray() {
+        long start = System.nanoTime();
         int[] arrayToSort = this.getSortedArray();
 
 
@@ -26,5 +27,8 @@ public class BubbleSort extends ArrayInteractions {
         }
 
         this.setSortedArray(arrayToSort);
+
+        long finish = System.nanoTime();
+        this.setTimeTaken(finish-start);
     }
 }

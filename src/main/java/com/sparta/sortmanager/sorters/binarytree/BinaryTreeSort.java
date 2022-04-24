@@ -10,6 +10,8 @@ public class BinaryTreeSort extends ArrayInteractions {
     // Adapter
     @Override
     public void sortRandomArray(){
+        long start = System.nanoTime();
+
         int[] arrayToSort = this.getSortedArray();
         int index = 0;
 
@@ -21,5 +23,8 @@ public class BinaryTreeSort extends ArrayInteractions {
         tree.traversingInOrder(tree.getNode(), arrayToSort, index);
 
         this.setSortedArray(arrayToSort);
+
+        long finish = System.nanoTime();
+        this.setTimeTaken(finish-start);
     }
 }
